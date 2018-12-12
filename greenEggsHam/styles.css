@@ -1,0 +1,49 @@
+#ageConfirm, #guidanceFooter { display: none !important; }
+
+img {
+  width: 220px;
+  height: 220px;
+  background-color: yellow;
+  border: 1px solid black;
+  float: left;
+}
+
+div{
+  width: 220px;
+  height: 220px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+#flapContainer {
+	position:relative;
+    transform:none;
+	transition:all 4s;
+    /*SAME AS
+    transition-duration:4s;
+    transition-property: transform;
+    transition-delay:0s;
+    transition-timing-function:linear;
+    */
+    transform-style:preserve-3d; /**/
+    transform-origin:right top 0;
+}
+
+#flapContainer:hover {
+	transform:rotateY(180deg);
+}
+
+#frontFlap { 
+	position:absolute;
+	transform:none;
+}
+
+#backFlap {
+	position:absolute;
+  	transform: rotateY(180deg); /* Standard syntax */
+  	backface-visibility:hidden;
+}
+
+#background {
+	position:absolute;    
+}
