@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Room 2003 Door Decoration</title>
+    <!-- bootstrap css added first so we can override default rules -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- an example of linking a css file -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- an example of connecting a js file-->
+    <script src="js/doorDecoration.js"></script>
+    
+</head>
+<body>
+<h1>Flip Phone</h1>
+<!-- basic row with 3 book covers across-->
+<div class="row">
+    <div class=".col-4"> </div>
+    <div class=".col-4"></div>
+    <div class=".col-4"></div>
+</div><!-- end row-->
+    
+<!-- row with 2 book covers portrayed in landscape mode meant for row with door handle-->
+<div class="row" >
+    <!-- this div meant as border where door handle goes -->
+    <div class="col-2 empty">LEAVE EMPTY</div>
+    <div class="col-4" id="corduroy">        
+        <div class="flapContainer">
+            <div class="frontFlap">Corduroy</div>
+            <div class="backFlap">
+                <p>I have read this book all by myself</p>
+            </div>
+        </div>
+     </div>
+    <div class="col-4 bookcover">Empty div at the moment</div>
+    <div class="col-2 empty">LEAVE EMPTY</div>
+</div>    <!-- end row-->
+    
+</body>
+</html>
