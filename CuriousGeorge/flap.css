@@ -1,0 +1,37 @@
+div{
+width: 220px;
+height: 220px;
+background-color:white;
+border: 1px solid black;
+ }
+
+ #flapContainer {
+   position: relative;
+   transform: none;
+   transition: all 4s;
+   transform-style: preserve-3d;
+   transform-origin: right top 0;
+ }
+/* #flapContainer:hover {
+   transform:rotateY(180deg);
+ }*/
+
+p {
+  padding: 10px;
+  margin-top:50px;
+  text-align: center;
+}
+#front {
+  position: absolute;
+  transform:none;
+}
+
+#back {
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility:hidden;
+}
+
+#background {
+  position: absolute;
+}
