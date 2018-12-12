@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 400px;
+  height: 400px;
+  background-color: LightBlue;
+  border: 1px solid black;
+}
+#flapContainer {
+	position:relative;
+    transform:none;
+	transition:all 4s;
+    /*SAME AS
+    transition-duration:4s;
+    transition-property: transform;
+    transition-delay:0s;
+    transition-timing-function:linear;
+    */
+    transform-style:preserve-3d; /**/
+    transform-origin:right top 0;
+}
+
+#flapContainer:hover {
+	transform:rotateY(180deg);
+}
+
+#frontFlap { 
+	position:absolute;
+	transform:none;
+}
+
+img{
+	width:100%;
+	height:100%;
+}
+
+#backFlap {
+	position:absolute;
+  	transform: rotateY(180deg); /* Standard syntax */
+  	backface-visibility:hidden;
+}
+
+#background {
+	position:absolute;    
+}
+</style>
+</head>
+<body>
+
+
+<div id="background">
+<img src="ifyougiveamausacookie2.jpg">
+</div>
+<div id="flapContainer">
+    <div id="backFlap">
+	This book is owned by: Maison Walsh
+	</div>   
+
+	<div id="frontFlap">
+	<img src="if you give a maus a cookie_.jpg">
+	</div>
+</div>
+
+
+</body>
+</html>
